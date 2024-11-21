@@ -9,6 +9,14 @@ public class FuelTank {
   }
 
   public int getActualFuel() {
-    return this.actualFuel;
+        return this.actualFuel;
+  }
+
+  public void setActualFuel(int fuel){
+    if(fuel >= 0){
+      this.actualFuel = fuel;
+    }else{
+      System.out.println("El valor no puede ser negativo. La capacidad no se modifica");
+    }
   }
 }
